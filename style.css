@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "VT323", sans-serif;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+  }
+
+
+.allgame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90vh;
+    max-height: 100vh;
+    border-radius: 2px;
+    margin: auto;
+    color: rgb(224, 224, 224);
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    height: 45vh;
+    pointer-events: none;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    font-family: "VT323", sans-serif;
+    color: rgb(224, 224, 224);
+    background-color: black;
+    border: none;
+    outline: none;
+    background: url(img/arrow.png) no-repeat;
+    background-size: 18px;
+    background-position: left center;
+    padding-left: 1.2rem;
+    padding-bottom: 4px;
+    align-items: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+button {
+    width: 150px;
+    height: 40px;
+    color: black;
+    font-family: "VT323", sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+   font-size: 1.5rem; 
+}
+
+input:checked + span {
+    background-color: #303030;
+}
+
+
+.question_div {
+    margin-top: 10px;
+}
+
+span:hover {
+    background-color: #303030;
+}
+  
+label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fac7c7;
+}
+
+span {
+    font-size: 1.7rem;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+a {
+    color: rgb(224, 224, 224);
+}
+
+a:hover { 
+    background-color: #303030;
+}
+
+.nasty {
+    font-size: 1.2rem;
+}
+
+h1 {
+    letter-spacing: 1.2px;
+}
+
+.signin {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.signininput {
+    padding-bottom: 1px;
+}
+
+.hint {
+    font-size: 0.9rem;
+    color: #afafaf;
+    cursor: pointer;
+}
