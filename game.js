@@ -154,7 +154,13 @@ function waitForSpace() {
 window.addEventListener('contextmenu', function (e) { e.preventDefault(); }, false);
 
 
-startgameBtn.addEventListener('click', startGame)
+startgameBtn.addEventListener('click', function() {
+    if (nickname.trim() == '') {
+        alert('Lutfen bir isim giriniz')
+    } else {
+        startGame()
+    }
+})
 
 async function startGame() {
     clear()
