@@ -140,12 +140,14 @@ function question(id, ques) {
 function waitForSpace() {
     return new Promise(resolve => {
         const spaceListener = function(event) {
-            if (event.keyCode === 32) {
+            if (event.keyCode === 32 || event.type === 'touchstart') {
                 document.removeEventListener('keydown', spaceListener);
+                document.removeEventListener('touchstart', spaceListener);
                 resolve();
             }
         };
         document.addEventListener('keydown', spaceListener);
+        document.addEventListener('touchstart', spaceListener);
     });
 }
 
