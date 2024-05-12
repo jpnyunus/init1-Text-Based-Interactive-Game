@@ -57,6 +57,17 @@ function createNewH1(text) {
                 resolve();
             }
         });
+
+        document.addEventListener('touchstart', function(event) {
+            if (event.type === 'touchstart') {
+                typed.destroy();
+                newH1.textContent = text;
+                if (musicEnabled) {
+                    music.pause();
+                }
+                resolve();
+            }
+        });
     });
 }
 
